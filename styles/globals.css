@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @layer utilities {
+    .animation-delay-75 {
+      animation-delay: 75ms;
+    }
+    ,
+    .animation-delay-100 {
+      animation-delay: 100ms;
+    }
+    ,
+    .animation-delay-125 {
+      animation-delay: 0.9s;
+    }
+  }
+  ,
+  font-face {
+    font-family: "Playfair Display", serif;
+    src: url("/fonts/PlayfairDisplay-Bold.woff2") format("woff2");
+  }
+  ,
+  font-face {
+    font-family: "CalSans-SemiBold", serif;
+    src: url("/fonts/CalSans-SemiBold") format("woff2");
+  }
+  ,
+  font-face {
+    font-family: "Playfair DisplayB", serif;
+    src: url("/fonts/PlayfairDisplay-ExtraBold.woff2") format("woff2");
+  }
+  ,
+  font-face {
+    font-family: "Poppins-Regular", serif;
+    src: url("/fonts/Poppins-Regular.ttf") format("ttf");
+  }
+
+  @layer components {
+    ::-webkit-scrollbar {
+      width: 0.5rem;
+      background: #fbf3e3;
+    }
+    body {
+      overflow-x: hidden;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #2e3254;
+      height: 2rem;
+    }
+  }
+}
